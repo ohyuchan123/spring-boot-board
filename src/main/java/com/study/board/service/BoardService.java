@@ -35,4 +35,9 @@ public class BoardService {
 
     }
 
+    //게시글 수정
+    public void boardModify(){
+
+    }
+
 }

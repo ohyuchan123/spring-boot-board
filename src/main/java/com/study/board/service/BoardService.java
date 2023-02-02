@@ -8,7 +8,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.awt.print.Pageable;
 import java.io.File;
 import java.util.List;
 import java.util.UUID;
@@ -39,8 +38,8 @@ public class BoardService {
     }
 
     //게시글 리스트 처리
-    public List<Board> boardList(Pageable pageable){
-        return boardRepository.findAll((Sort) pageable);
+    public List<Board> boardList(){
+        return boardRepository.findAll();
     }
 
     //특정 게시글 불러오기
